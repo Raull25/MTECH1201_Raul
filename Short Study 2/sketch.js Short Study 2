@@ -1,0 +1,38 @@
+/*
+Name: Raul L.
+*/
+// circleX moves towards the right of the canvas
+let circleX = 250;
+
+function setup() {
+  createCanvas(600,600);
+}
+// Resets the circle back in the center
+function mousePressed(){
+  circleX = 200;
+}
+function draw() {
+
+  background("lightgrey");
+
+  // Ellipse mouseY move your mouse up and down to shade the shapes
+  stroke(179, 236, 255);
+  strokeWeight(3)
+  fill(mouseY)
+  //mouseX is to move the ellipse left and right
+  ellipse (mouseX, 300,390,300,450)
+
+stroke(255, 163, 188)
+  circle(circleX, 300,100)
+ 
+  stroke(237, 176, 255)
+   //Top Corner Cirles
+  circle(40,20,300)
+  circle (525,20,300)
+  //Bottom Corner Circles
+  circle(525,580,300)
+circle(40,580,300)
+  // tells the circle to go right at the speed of one pixel
+  circleX = circleX + 1;
+}
+
