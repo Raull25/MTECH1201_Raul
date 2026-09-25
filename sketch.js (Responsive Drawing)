@@ -1,0 +1,25 @@
+/*
+Name: Raul L.
+*/
+let circleX = 250;
+
+function setup() {
+  createCanvas(600,600);
+}
+function mousePressed(){
+  circleX = 200;
+}
+function draw() {
+
+  background("grey");
+
+  stroke(179, 236, 255);
+  fill(mouseY)
+  ellipse (mouseX, 300,300,300,450)
+
+stroke(255, 163, 188)
+  circle(circleX, 300,100)
+
+  circleX = circleX + 1;
+}
+
